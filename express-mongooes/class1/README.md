@@ -114,7 +114,7 @@ School Database (school_db)
 #### Step 3: Get Connection String
 
 ```env
-MONGODB_URI = "mongodb+srv://username:password@cluster0.abc123.mongodb.net/school_db?retryWrites=true&w=majority"
+mongodb connection string looks like this= mongodb+srv://urUserNameHere:UrPassword@cluster0.abc123.mongodb.net/theDataBaseName?retryWrites=true&w=majority
 ```
 
 ### 3. Node.js/Express Setup
