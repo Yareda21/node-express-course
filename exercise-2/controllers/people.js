@@ -41,8 +41,10 @@ exports.addBookmark = (req, res) => {
     );
     if (!person || !product)
         return res.status(404).json({ msg: "User or Product not found" });
-    if (!person.bookmarks.includes(product.id))
-        person.bookmarks.push(product.id);
+    if (!person.bookmarks) {
+        person.bookmarks = []
+    }
+    person.bookmarks.push(product.id);
     res.json({ msg: "Bookmarked" });
 };
 
