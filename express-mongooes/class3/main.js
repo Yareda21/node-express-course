@@ -9,8 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-//  connection from mongoose to MongoDB
 
+const Contact = require("./routes/Contact")
+
+//  connection from mongoose to MongoDB
 const connectDB = async () => {
     try {
         await mongoose.connect("mongodb://localhost:27017/mydatabase", {
@@ -23,6 +25,10 @@ const connectDB = async () => {
         process.exit(1)
     }
 }
+
+
+// Definations of routes 
+app.use("/api/contact/", Contact)
 
 
 app.listen(PORT, () => {
