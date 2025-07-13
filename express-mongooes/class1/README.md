@@ -95,7 +95,7 @@ School Database (school_db)
 
 ### 1. Install Required Tools
 
--   MongoDB Community Server (local) OR
+-   MongoDB Community Server (local) with compass gui OR
 -   MongoDB Atlas (cloud – recommended for beginners)
 
 ### 2. MongoDB Atlas Setup
