@@ -8,7 +8,7 @@
 
 ## creating a model schema
 
--   create a folder called `models` na inside called `Contact.js`
+-   create a folder called `models` inside called `Contact.js`
 
 
 **Exercise:**
